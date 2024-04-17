@@ -1,0 +1,190 @@
+.inscription {
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; /* Centrer verticalement les éléments */
+    width: 100%;
+}
+
+.inscription .overlap1 {
+    background-color: var(--accent-color);
+    height: 850px;
+    width: 441px;
+    margin: -18px 0 0 -4px;
+    padding: 20px 0 0 14px;
+    position: relative; /* Ajout d'une position relative */
+    left: 20%;
+}
+
+.inscription .text-wrapper5 {
+    color: #000000;
+    font-family: "Karla", Helvetica;
+    font-size: 20px;
+    font-weight: regular;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+    margin-top: 18px;
+    position: absolute;
+    transform: translateX(-50%);
+    cursor:pointer;
+
+}
+.text-wrapper5:hover{
+    color:#00ABD5; 
+    text-decoration: underline;
+
+}
+.inscription .text-wrapper5:first-child {
+    top: 22px; /* Ajustez la position en fonction de votre mise en page */
+    left: 0;
+}
+
+.inscription .text-wrapper5:last-child {
+    top: 22px; /* Ajustez la position en fonction de votre mise en page */
+    right: 0;
+}
+
+.inscription .div {
+    background-color: #ffffff;
+    height: 832px;
+    position: relative;
+    width: 1280px;
+}
+
+.inscription .overlap-group {
+    background-color: #f7f7f7;
+    height: 670px;
+    position: relative; /* Changement de position à relative */
+    width: 585px;
+}
+
+.inscription .nouveau-sur {
+    color: #020e25;
+    font-family: "Karla", Helvetica;
+    font-size: 20px;
+    font-weight: 400;
+    left: 168px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    text-align: center;
+    top: 90px;
+    width: 243px;
+    margin: 0 auto; /* Centrer horizontalement */
+}
+
+.inscription .text-wrapper {
+    font-size: 13px;
+    font-weight: bold;
+    font-family: "Karla", Helvetica;
+    color:#00ABD5;
+}
+
+.inscription .span {
+    font-size: 13px;
+    font-weight: regular;
+    font-family: "Karla", Helvetica;
+}
+
+.inscription .overlap {
+    color: #5a5a5a;
+    font-family: "Karla", Helvetica;
+    font-size: 16px;
+    font-weight: 300;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 11px;
+    white-space: nowrap;
+    border: 1px solid #b6b6b6; /* Ajout de la bordure */
+    border-radius: 9px; /* Ajout de la bordure arrondie */
+    width: 353px;
+    height: 45px;
+    position: absolute;
+    width: 353px;
+    top: 210px;
+    left: 50%; /* Ajuster la position horizontale */
+    transform: translateX(-50%);/* Déplacer de moitié de la largeur de l'élément vers la gauche */
+}
+
+.inscription .upload {
+    height: 30px;
+    object-fit: cover;
+    position: absolute;
+    top: 69%;
+    left: 75%;
+    transform: translate(-50%, -50%); /* Centrer l'image */
+    cursor: pointer; /* Ajouter un curseur pointer pour indiquer que l'image est cliquable */
+}
+
+.inscription .overlap-2,
+.inscription .overlap-3,
+.inscription .overlap-4 {
+    color: #5a5a5a;
+    font-family: "Karla", Helvetica;
+    font-size: 16px;
+    font-weight: 300;
+    left: 50%; /* Centrez horizontalement */
+    transform: translateX(-50%); /* Centrez horizontalement */
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 11px;
+    white-space: nowrap;
+    border: 1px solid #b6b6b6; /* Ajout de la bordure */
+    border-radius: 9px; /* Ajout de la bordure arrondie */
+    width: 353px;
+    height: 45px;
+    height: 45px;
+    position: absolute;
+    width: 353px;
+    top: 291px;
+    left: 50%; /* Ajuster la position horizontale */
+    transform: translateX(-50%); /* Déplacer de moitié de la largeur de l'élément vers la gauche */
+}
+
+.inscription .overlap-3 {
+    top: 365px;
+}
+
+.inscription .overlap-4 {
+    top: 439px;
+}
+
+.inscription .overlap- {
+    top: 439px;
+}
+
+.inscription .overlap-5 {
+    background-color: #00abd5;
+    border:solid #00abd5;
+    border-radius: 6px ;
+    height: 45px;
+    position: absolute;
+    width: 353px;
+    top: 584px;
+    transform: translateX(-50%); /* Déplacer de moitié de la largeur de l'élément vers la gauche */
+    font-family:"Karla",Helvetica;
+    font-size:20px;
+    color:#ffffff;
+    cursor:pointer;
+}
+
+.inscription .capture {
+    height: 560px;
+    left: 702px;
+    object-fit: cover;
+    position: absolute;
+    top: 90px;
+    width: 445px;
+}
+.inscription .forgot-password-link {
+    color: #000; /* Couleur du texte */
+    text-decoration: underline; /* Souligner le texte */
+    cursor: pointer;
+    position: absolute;
+    top: 350px;
+left:210px  }
+  

@@ -1,0 +1,235 @@
+.icon,
+.mon-profil {
+  position: relative;
+  z-index: 1;
+}
+.icon {
+  height: 29px;
+  width: 26px;
+  object-fit: cover;
+}
+.mon-profil {
+  flex: 1;
+  font-weight: 300;
+}
+.parent {
+  width: 135px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 0 9px;
+}
+.name-frame-child {
+  height: 150px;
+  width: 612px;
+  position: relative;
+  border-radius: 15px;
+  background-color: #fff;
+  display: none;
+  max-width: 100%;
+  z-index: 0;
+}
+.samira-ben-hadj {
+  width: 257px;
+  position: relative;
+  display: inline-block;
+  flex-shrink: 0;
+  z-index: 2;
+}
+.conversation-1-icon,
+.online-pharmacy-1-icon {
+  position: absolute;
+  margin: 0 !important;
+  bottom: -56px;
+  object-fit: cover;
+  z-index: 2;
+}
+.online-pharmacy-1-icon {
+  height: 85px;
+  width: 85px;
+  left: 20px;
+}
+.conversation-1-icon {
+  height: 75px;
+  width: 76px;
+  right: 49px;
+}
+.name-frame,
+.s-label-child {
+  position: relative;
+  border-radius: 15px;
+  box-sizing: border-box;
+}
+.name-frame {
+  align-self: stretch;
+  flex: 1;
+  background-color: #fff;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-end;
+  padding: 57px 136px;
+  max-width: 100%;
+  z-index: 1;
+}
+.s-label-child {
+  height: 51px;
+  width: 70px;
+  background-color: rgba(219, 219, 219, 0.52);
+  border: 1px solid #b7b6b6;
+  display: none;
+}
+.s {
+  margin: 0;
+  flex: 1;
+  position: relative;
+  font-size: inherit;
+  font-weight: 400;
+  font-family: inherit;
+  z-index: 3;
+}
+.conversation-frame,
+.s-label {
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+}
+.s-label {
+  width: 70px;
+  margin: 0 !important;
+  position: absolute;
+  top: -26px;
+  left: 262px;
+  border-radius: 15px;
+  background-color: rgba(219, 219, 219, 0.52);
+  border: 1px solid #b7b6b6;
+  flex-direction: row;
+  justify-content: flex-end;
+  padding: 0 0 0 19px;
+  z-index: 2;
+  font-size: 48px;
+}
+.conversation-frame {
+  width: 632px;
+  height: 150px;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 20px 0 0;
+  position: relative;
+  max-width: 100%;
+}
+.settings-rectangle {
+  width: 100%;
+  height: 113px;
+  position: absolute;
+  margin: 0 !important;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: 15px;
+  background-color: #fff;
+}
+.mes-ordres {
+  width: 138px;
+  position: relative;
+  display: inline-block;
+  z-index: 1;
+}
+.download-button1 {
+  height: 118px;
+  width: 244px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 25px;
+  box-sizing: border-box;
+  position: relative;
+}
+.mes-messages {
+  width: 244px;
+  position: relative;
+  display: inline-block;
+  flex-shrink: 0;
+}
+.message-text {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 20px;
+  font-size: 16px;
+}
+.message-frame {
+  align-self: stretch;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 26px 0 0;
+  box-sizing: border-box;
+  gap: 64px 0;
+}
+.frame-group,
+.message-frame,
+.message-frame-wrapper {
+  display: flex;
+  align-items: flex-start;
+  max-width: 100%;
+}
+.message-frame-wrapper {
+  width: 710px;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 7px 0 0;
+  box-sizing: border-box;
+  color: #000;
+}
+.frame-group {
+  align-self: stretch;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 20px;
+  text-align: left;
+  font-size: 20px;
+  color: #030e25;
+  font-family: Karla;
+}
+@media screen and (max-width: 1000px) {
+  .s {
+    font-size: 38px;
+  }
+  .frame-group {
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 725px) {
+  .name-frame {
+    padding-left: 68px;
+    padding-right: 68px;
+    box-sizing: border-box;
+  }
+  .message-text {
+    flex-wrap: wrap;
+  }
+  .message-frame {
+    gap: 64px 0;
+  }
+}
+@media screen and (max-width: 450px) {
+  .mon-profil,
+  .samira-ben-hadj {
+    font-size: 16px;
+  }
+  .name-frame {
+    padding-left: 20px;
+    padding-right: 20px;
+    box-sizing: border-box;
+  }
+  .s {
+    font-size: 29px;
+  }
+  .message-frame {
+    gap: 64px 0;
+  }
+}

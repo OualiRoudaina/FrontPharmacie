@@ -1,0 +1,307 @@
+.se-dconnecter {
+  width: 240px;
+  position: absolute;
+  margin: 0 !important;
+  bottom: -10px;
+  left: 130px;
+  display: inline-block;
+  z-index: 1;
+}
+.arrow-down-11998767-4-icon,
+.arrow-right-13883744-1-icon {
+  position: absolute;
+  margin: 0 !important;
+  object-fit: cover;
+  z-index: 1;
+}
+.arrow-down-11998767-4-icon {
+  height: 35px;
+  width: 60px;
+  right: 19px;
+  bottom: -16px;
+}
+.arrow-right-13883744-1-icon {
+  height: 73px;
+  width: 73px;
+  bottom: -30px;
+  left: 20px;
+}
+.donnes-personnelles,
+.frame-child {
+  align-self: stretch;
+  position: relative;
+}
+.frame-child {
+  height: 289px;
+  border-radius: 10px;
+  background-color: #fff;
+  display: none;
+}
+.donnes-personnelles {
+  z-index: 1;
+}
+.donnes-personnelles-wrapper {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 2px 0 0;
+  box-sizing: border-box;
+  min-width: 224px;
+  max-width: 100%;
+}
+.arrow-down-11998767-1-icon {
+  height: 35px;
+  width: 60px;
+  position: relative;
+  object-fit: cover;
+  z-index: 1;
+}
+.personaldata,
+.personaldata-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  max-width: 100%;
+}
+.personaldata {
+  flex: 1;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0 61px;
+}
+.personaldata-wrapper {
+  width: 503px;
+  align-items: flex-start;
+  padding: 0 19px;
+  box-sizing: border-box;
+}
+.settingsline {
+  align-self: stretch;
+  height: 2px;
+  position: relative;
+  border-top: 1.5px solid #000;
+  box-sizing: border-box;
+  z-index: 1;
+}
+.settings-3524636-1-icon {
+  height: 64px;
+  width: 64px;
+  position: relative;
+  object-fit: cover;
+  z-index: 1;
+}
+.paramtres {
+  width: 283px;
+  position: relative;
+  display: inline-block;
+  z-index: 1;
+}
+.paramtres-wrapper {
+  width: 365px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 7px 0 0;
+  box-sizing: border-box;
+  max-width: 100%;
+}
+.arrow-down-11998767-2-icon {
+  align-self: stretch;
+  height: 35px;
+  position: relative;
+  max-width: 100%;
+  overflow: hidden;
+  flex-shrink: 0;
+  object-fit: cover;
+  z-index: 1;
+}
+.arrowrightrectangle,
+.paramtresframe {
+  display: flex;
+  justify-content: flex-start;
+}
+.arrowrightrectangle {
+  width: 60px;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 13px 0 0;
+  box-sizing: border-box;
+}
+.paramtresframe {
+  flex: 1;
+  flex-direction: row;
+  align-items: center;
+  gap: 0 40px;
+  max-width: 100%;
+}
+.paramtresframe-wrapper,
+.settingsline1 {
+  align-self: stretch;
+  box-sizing: border-box;
+}
+.paramtresframe-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 19px 6px 22px;
+  max-width: 100%;
+}
+.settingsline1 {
+  height: 2px;
+  position: relative;
+  border-top: 1.5px solid #000;
+  z-index: 1;
+}
+.transfer-3694582-1-icon {
+  height: 68px;
+  width: 68px;
+  position: relative;
+  object-fit: cover;
+  z-index: 1;
+}
+.changer-mot-de {
+  flex: 1;
+  position: relative;
+  display: inline-block;
+  min-width: 161px;
+  max-width: 100%;
+  z-index: 1;
+}
+.passwordchange {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 0 38px;
+  min-width: 294px;
+  max-width: 100%;
+}
+.arrow-down-11998767-3-icon {
+  align-self: stretch;
+  height: 35px;
+  position: relative;
+  max-width: 100%;
+  overflow: hidden;
+  flex-shrink: 0;
+  object-fit: cover;
+  z-index: 1;
+}
+.arrowdownrectangle {
+  width: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 0 9px;
+  box-sizing: border-box;
+}
+.linesframe-child,
+.rectanglecontainer {
+  align-self: stretch;
+  max-width: 100%;
+  flex-shrink: 0;
+}
+.rectanglecontainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0 20px 0 19px;
+  box-sizing: border-box;
+  gap: 0 58px;
+}
+.linesframe-child {
+  height: 1.5px;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+.linesframe,
+.rectangle-parent {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  max-width: 100%;
+}
+.linesframe {
+  align-self: stretch;
+  align-items: center;
+  gap: 7px 0;
+}
+
+.rectangle-parent {
+  flex: 1;
+  border-radius: 10px;
+  background-color: #fff;
+  align-items: flex-end;
+  padding: 13px 0 47px 2px;
+  box-sizing: border-box;
+  gap: 25px 0;
+  color: #000;
+}
+.man-11311998-1-icon1 {
+  height: 68px;
+  width: 68px;
+  position: absolute;
+  margin: 0 !important;
+  top: -7px;
+  left: 22px;
+  object-fit: cover;
+  z-index: 1;
+}
+.frame-wrapper,
+.se-dconnecter-parent {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  max-width: 100%;
+}
+.se-dconnecter-parent {
+  width: 612px;
+  justify-content: flex-start;
+  position: relative;
+}
+.frame-wrapper {
+  width: 808px;
+  justify-content: center;
+  padding: 0 20px;
+  box-sizing: border-box;
+  text-align: left;
+  font-size: 20px;
+  color: red;
+  font-family: Karla;
+}
+@media screen and (max-width: 725px) {
+  .paramtresframe {
+    flex-wrap: wrap;
+    gap: 0 40px;
+  }
+  .passwordchange {
+    flex-wrap: wrap;
+  }
+  .rectanglecontainer {
+    gap: 0 58px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .donnes-personnelles,
+  .se-dconnecter {
+    font-size: 16px;
+  }
+  .personaldata {
+    gap: 0 61px;
+  }
+  .changer-mot-de,
+  .paramtres {
+    font-size: 16px;
+  }
+  .passwordchange {
+    gap: 0 38px;
+  }
+}

@@ -1,0 +1,124 @@
+.messagerie {
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.messagerie .div {
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden; /* Assurez-vous que la partie des messages ne dépasse pas la hauteur de l'écran */
+}
+
+.message-list {
+    background-color: #d2eef1;
+    max-height: calc(100vh - 45px); /* Soustrayez la hauteur de la zone de saisie de message */
+    overflow-y: auto;
+    padding: 20px;
+    margin-right: auto;
+}
+
+.message-left {
+    text-align: left;
+}
+
+.message-right {
+    text-align: right;
+}
+
+.messagerie .overlap {
+    background-color: #d2eef1;
+    width: 441px;
+}
+
+.messagerie .text-wrapper {
+    color: #000000;
+    font-family: "Karla", Helvetica;
+    font-size: 20px;
+    font-weight: 700;
+    left: 24px;
+    letter-spacing: 0;
+    line-height: normal;
+    top: 18px;
+    white-space: nowrap;
+}
+
+.messagerie .text-wrapper-2 {
+    color: #4078a6;
+    font-family: "Karla", Helvetica;
+    font-size: 20px;
+    font-weight: 700;
+    left: 91px;
+    letter-spacing: 0;
+    line-height: normal;
+    top: 180px;
+    width: 257px;
+}
+
+.messagerie .text-wrapper-3 {
+    color: #d0cfcf;
+    font-family: "Karla", Helvetica;
+    font-size: 20px;
+    font-weight: 700;
+    left: 91px;
+    letter-spacing: 0;
+    line-height: normal;
+    top: 180px;
+    width: 257px;
+}
+
+.messagerie .overlap-group-2 {
+    background-color: #f5f5f5;
+    border-radius: 22.5px;
+    height: 45px;
+    left: 559px;
+    position: absolute;
+    top: calc(100vh - 45px); /* Positionnez la zone de saisie de message en bas de l'écran */
+    width: 727px;
+}
+
+.messagerie .send {
+    height: 19px;
+    left: 1248px;
+    object-fit: cover;
+    position: absolute;
+    top: calc(100vh - 28px); /* Positionnez le bouton d'envoi en bas de l'écran */
+    width: 19px;
+}
+/* Styles pour les bulles de message */
+/* Bulle de message à droite */
+/* Styles pour les bulles de messages envoyés par l'utilisateur actuel */
+.bubble-right {
+    background-color: #DCF8C6; /* Couleur de fond pour les bulles de l'utilisateur actuel */
+    color: #000; /* Couleur du texte */
+    margin: 5px 0; /* Marge entre les bulles de messages */
+    padding: 10px; /* Espacement à l'intérieur de la bulle */
+    border-radius: 15px; /* Bordure arrondie */
+    max-width: 70%; /* Largeur maximale de la bulle */
+    align-self: flex-end; /* Alignement à droite */
+  }
+  
+  /* Styles pour les bulles de messages envoyés par d'autres expéditeurs */
+  .bubble-left {
+    background-color: #F0F0F0; /* Couleur de fond pour les bulles des autres expéditeurs */
+    color: #000; /* Couleur du texte */
+    margin: 5px 0; /* Marge entre les bulles de messages */
+    padding: 10px; /* Espacement à l'intérieur de la bulle */
+    border-radius: 15px; /* Bordure arrondie */
+    max-width: 70%; /* Largeur maximale de la bulle */
+    align-self: flex-start; /* Alignement à gauche */
+  }
+  
+/* Style pour le nom de l'expéditeur */
+.sender-name {
+    font-weight: bold;
+}
+
+/* Style pour le message */
+.message {
+    margin: 5px 0;
+}

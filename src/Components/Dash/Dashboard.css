@@ -1,0 +1,58 @@
+/* Dashboard.css */
+
+.dashboard-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-image: url('../Assets/back.jpg');
+  background-size: cover;
+  background-position: center;
+}
+.sidebar-content {
+  display: flex;
+  flex: 1;
+}
+
+.main-content {
+  flex: 1;
+}
+
+/* Autres styles pour les composants internes peuvent être ajoutés ici */
+/* Dashboard.css */
+
+.DashboardCard {
+  margin-left: 150px; /* Marge à gauche de chaque carte */
+  margin-right: -20px; /* Marge négative à droite de chaque carte pour compenser la marge de gauche de la carte suivante */
+  padding-right: 20px; /* Espacement de 20 pixels à droite de chaque carte */
+}
+
+.table-custom {
+width: 100%;
+border-collapse: collapse;
+border-radius: 8px;
+overflow: hidden;
+box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.table-custom th,
+.table-custom td {
+padding: 12px;
+text-align: left;
+border-bottom: 1px solid #dee2e6;
+}
+
+.table-custom th {
+background-color: #f8f9fa;
+}
+
+.table-custom tbody tr:nth-of-type(odd) {
+background-color: #f3f4f6;
+}
+
+.table-custom tbody tr:hover {
+background-color: #e9ecef;
+}
+
+.table-custom tbody tr:last-child td {
+border-bottom: none;
+}
