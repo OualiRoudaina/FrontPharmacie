@@ -34,9 +34,9 @@ function SideMenu() {
           <MenuItem
             label="Ordres"
             icon="bi bi-person-fill"
-            key="/customers"
-            onClick={() => navigate("/customers")}
-            isSelected={selectedKeys === "/customers"}
+            key="/ordre"
+            onClick={() => navigate("/ordre")}
+            isSelected={selectedKeys === "/ordre"}
           />
         </ul>
       </div>

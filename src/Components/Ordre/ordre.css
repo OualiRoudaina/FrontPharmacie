@@ -1,0 +1,39 @@
+/* categories.css */
+
+.containerU {
+    padding: 20px;
+    margin-left:400px;
+  }
+  
+  .table {
+    width: 100%;
+  }
+  
+  .search-user {
+    width: 300px;
+    margin: 0 auto 16px; /* 0 pour la marge supérieure et inférieure, auto pour la marge horizontale */
+    
+  }
+  
+  .btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+    color: #fff;
+  }
+  
+  .btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+  }
+  
+  .btn-danger {
+    background-color: #dc3545;
+    border-color: #dc3545;
+    color: #fff;
+  }
+  
+  .btn-danger:hover {
+    background-color: #bd2130;
+    border-color: #bd2130;
+  }
+  

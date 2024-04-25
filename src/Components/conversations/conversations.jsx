@@ -1,65 +1,78 @@
+import React, { useState, useEffect } from "react";
 import axios from "axios";
-import { useEffect, useState } from "react";
-import "./conversations.css";
+import { useDispatch } from "react-redux";
+import icon from "../Assets/icon.png"
+import "./conversations.css"
+const Conversation = ({ conversation, currentUser }) => {
+  const [userDataCache, setUserDataCache] = useState({});
+  const [loading, setLoading] = useState(true);
+  const [renderedConversations, setRenderedConversations] = useState(new Set());
+  const dispatch = useDispatch();
 
-export default function Conversation({ conversation, currentUser,  }){
-  
-  const [friend, setFriend] = useState(null);
-  const [previousSenderId, setPreviousSenderId] = useState(null);
+  const getUser = async (userId) => {
+    try {
+      const response = await axios.get(`http://localhost:3007/api/v1/utilisateur/${userId}`);
+      return response.data;
+    } catch (error) {
+      console.error("Error fetching user data:", error);
+      return null;
+    }
+  };
 
   useEffect(() => {
-   // console.log("Current user:", currentUser);
-    console.log("Conversation:", conversation);
-
-    const getFriendDetails = async () => {
+    const fetchUserData = async () => {
+      const otherUserId = currentUser === conversation.senderId ? conversation.recipientId : conversation.senderId;
+      const key = [currentUser, otherUserId].sort().join('_'); // Créer une clé unique basée sur les IDs des personnes
       try {
-        if (conversation && currentUser ) {
-          const senderId = conversation.senderId;
-          const receiverId = conversation.recipientId;
-          
-          
-         // console.log("SenderId:", senderId);
-         // console.log("ReceiverId:", receiverId);
-         // console.log("CurrentUserId:", currentUser._id);
-
-          const otherUserId = senderId === currentUser._id ? receiverId : senderId;
-         // console.log("OtherUserId:", otherUserId);
-
-          //console.log("Is senderId equal to CurrentUserId?", senderId === currentUser._id);
-          //console.log("Is receiverId equal to CurrentUserId?", receiverId === currentUser._id);
-          //console.log("Is the condition true?", otherUserId === currentUser._id);
-          if  (senderId && conversation.senderName) {
-            const response = await axios.get(`http://localhost:3007/api/v1/chats/messages/${currentUser._id}`);
-
-            console.log("Réponse de la requête axios :", response.data);
-            setFriend(response.data);
-          } 
+        if (renderedConversations.has(key)) {
+          // Si la conversation entre ces deux personnes a déjà été rendue, arrêtez le chargement et quittez la fonction
+          setLoading(false);
+          return;
         }
+        // Ajouter la clé à l'ensemble des conversations rendues
+        setRenderedConversations(prevSet => new Set(prevSet.add(key)));
+        
+        const userData = await getUser(otherUserId);
+        if (userData) {
+          setUserDataCache(prevCache => ({ ...prevCache, [otherUserId]: userData }));
+          dispatch({ type: "SAVE_USER", data: userData });
+        }
+        setLoading(false);
       } catch (error) {
-        console.error("Error fetching friend details:", error);
+        console.log(error);
       }
     };
 
-    getFriendDetails();
-    
-  }, [currentUser, conversation]);
+    fetchUserData();
+  }, [currentUser, conversation, dispatch, renderedConversations]);
+
+  if (loading) {
+    return <div>Loading...</div>;
+  }
+
+  const otherUserId = currentUser === conversation.senderId ? conversation.recipientId : conversation.senderId;
+  const userData = userDataCache[otherUserId];
 
   return (
     <>
-      {conversation.senderId !== currentUser._id && conversation.senderName &&
-(
-        <div className="conversation">
+      <div className="follower conversation" key={conversation._id}>
+        <div>
           <img
+            src={
+              icon
+            }
+            alt="Profile"
             className="conversationImg"
-            src={friend && friend.profilePicture ? `../../path/to/profilePictures/${friend.profilePicture}` : `../../path/to/defaultAvatar/noAvatar.png`}
-            alt=""
+            style={{ width: "50px", height: "50px" }}
           />
-          <span className="conversationName">
-            {conversation.senderName}
-          </span>
+          <div className="conversationName" style={{ fontSize: "1rem" }}>
+            <span>{userData?.data.name}</span>
+          </div>
         </div>
-      )}
+      </div>
+      <hr style={{ width: "85%", border: "0.1px solid #ececec" }} />
     </>
   );
-  
-}
+};
+
+export default Conversation;
