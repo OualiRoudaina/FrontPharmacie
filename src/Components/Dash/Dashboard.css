@@ -4,10 +4,11 @@
   display: flex;
   flex-direction: column;
   height: 100vh;
-  background-image: url('../Assets/back.jpg');
-  background-size: cover;
+  background-image: url('../Assets/test.jpg');
+  background-size: 50%; /* Diminution de moitié de la taille de l'image */
   background-position: center;
 }
+
 .sidebar-content {
   display: flex;
   flex: 1;
@@ -16,6 +17,17 @@
 .main-content {
   flex: 1;
 }
+/* Ajoutez ces styles CSS dans votre fichier Dashboard.css */
+
+.chart-container {
+  text-align: center; /* Pour centrer les cercles sous les cartes */
+}
+
+.chart-container canvas {
+  width: 200px; /* Augmentez la largeur */
+  height: 200px; /* Augmentez la hauteur */
+}
+
 
 /* Autres styles pour les composants internes peuvent être ajoutés ici */
 /* Dashboard.css */

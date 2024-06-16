@@ -18,7 +18,7 @@ function SideMenu() {
     <div className="bg-light">
       <ul className="list-group SideMenuVertical">
           <MenuItem
-            label="Dashboard"
+            label="Tableau de bord"
             icon="bi bi-grid-fill"
             key="/"
             onClick={() => navigate("/")}
@@ -26,7 +26,7 @@ function SideMenu() {
           />
           <MenuItem
             label="Messages"
-            icon="bi bi-cart-fill"
+            icon="bi bi-chat-left-heart-fill"
             key="/Medicament"
             onClick={() => navigate("/messenger")}
             isSelected={selectedKeys === "/messenger"}
@@ -37,6 +37,13 @@ function SideMenu() {
             key="/ordre"
             onClick={() => navigate("/ordre")}
             isSelected={selectedKeys === "/ordre"}
+          />
+           <MenuItem
+            label="Stock"
+            icon="bi bi-archive-fill"
+            key="/stock"
+            onClick={() => navigate("/stock")}
+            isSelected={selectedKeys === "/stock"}
           />
         </ul>
       </div>

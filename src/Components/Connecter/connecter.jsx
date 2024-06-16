@@ -50,7 +50,7 @@ export const Connecter = () => {
     };
 
     const handleForgotPasswordClick = () => {
-        navigate("/reset-password");
+        navigate("/sendEmail");
     };
 
     const defaultOptions = {
@@ -89,7 +89,7 @@ export const Connecter = () => {
                             <input className="overlap-2" name="password" type="password" placeholder="Mot de passe" value={formData.password} onChange={handleChange} />
                         </div>
                         <div>
-                            <button type="submit" className="overlap-5">Connecter</button>
+                            <button type="submit" className="overlap-15">Connecter</button>
                         </div>
                         <p className="forgot-password-link" onClick={handleForgotPasswordClick}>Mot de passe oublié ?</p>
                     </form>

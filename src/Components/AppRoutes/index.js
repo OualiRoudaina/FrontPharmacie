@@ -11,6 +11,8 @@ import ResetPassword from "../ResetPassword/resetPassword";
 import CodeRecap from "../CodeRecuperation/codeRecuperation";
 import SendEmail from "../SendEmail/sendEmail";
 import Ordre from "../Ordre";
+import Stock from "../Stock/stock";
+import Password from "../ChangePass/ChangePasswordByEmail";
 
 function AppRoutes(){
 return (
@@ -27,7 +29,9 @@ return (
           <Route path='/sendEmail' element={<SendEmail />} />
           <Route path='/codeRecap' element={<CodeRecap />} />
           <Route path='/ordre' element={<Ordre />} />
-
+          <Route path='/stock' element={<Stock />} />
+          <Route path='/Password' element={<Password />} />
+  
         </Routes>
       
 )

@@ -24,6 +24,50 @@
   justify-content: space-between;
   position: relative;
 }
+.chatMenuWrapper {
+  overflow-y: auto;
+  max-height: 100%; /* Adjust the max-height as needed */
+}
+
+/* Style the scrollbar */
+.chatMenuWrapper::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+.chatMenuWrapper::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Light grey */
+}
+
+/* Handle */
+.chatMenuWrapper::-webkit-scrollbar-thumb {
+  background: #888; /* Dark grey */
+}
+
+/* Handle on hover */
+.chatMenuWrapper::-webkit-scrollbar-thumb:hover {
+  background: #555; /* Black */
+}
+
+.chatBoxTop::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+.chatBoxTop::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Light grey */
+}
+
+/* Handle */
+.chatBoxTop::-webkit-scrollbar-thumb {
+  background: #888; /* Dark grey */
+}
+
+/* Handle on hover */
+.chatBoxTop::-webkit-scrollbar-thumb:hover {
+  background: #555; /* Black */
+}
+
 
 .chatBoxTop {
   height: 100%;
@@ -39,10 +83,36 @@
 }
 
 .chatMessageInput {
-  width: 80%;
-  height: 90px;
-  padding: 10px;
+  width: calc(100% - 20px); /* Adjust width as needed */
+  height: 60px; /* Adjust height as needed */
+  padding: 10px; /* Add padding for better spacing */
+  border: 1px solid #ccc; /* Add a border */
+  border-radius: 8px; /* Add border radius for rounded corners */
+  resize: none; /* Prevent resizing */
+  font-size: 16px; /* Set font size */
 }
+
+.chatMessageInput:focus {
+  outline: none; /* Remove default focus outline */
+  border-color: #007bff; /* Change border color when focused */
+}
+
+.chatSubmitButton {
+  width: 80px; /* Adjust width as needed */
+  height: 40px; /* Adjust height as needed */
+  background-color: #007bff; /* Set background color */
+  color: #fff; /* Set text color */
+  border: none; /* Remove border */
+  border-radius: 8px; /* Add border radius for rounded corners */
+  font-size: 16px; /* Set font size */
+  cursor: pointer; /* Add pointer cursor */
+  transition: background-color 0.3s ease; /* Add smooth transition */
+}
+
+.chatSubmitButton:hover {
+  background-color: #0056b3; /* Change background color on hover */
+}
+
 
 .chatSubmitButton {
   width: 70px;

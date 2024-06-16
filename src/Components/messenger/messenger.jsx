@@ -85,7 +85,7 @@ export default function Messenger() {
                 if (currentChat) {
                     const token = localStorage.getItem('accessToken');
                     console.log("currentChat", currentChat._id);
-                    const response = await axios.get(`http://localhost:3007/api/v1/chats/conversation/${currentChat.senderId}/${currentChat.recipientId}`, {
+                    const response = await axios.get(`http://localhost:3007/api/v1/chats/conversations/${currentChat.senderId}/${currentChat.recipientId}`, {
                         headers: {
                             Authorization: `Bearer ${token}`
                         }
@@ -126,6 +126,7 @@ export default function Messenger() {
 
         try {
             const token = localStorage.getItem('accessToken');
+            window.location.reload();
             socket.current.emit("send_message", {
                 senderId: user._id,
                 recipientId: currentChat.senderId,
@@ -174,12 +175,12 @@ export default function Messenger() {
                                 <div className="chatBoxBottom">
                                     <textarea
                                         className="chatMessageInput"
-                                        placeholder="write something..."
+                                        placeholder="écire une chose..."
                                         onChange={(e) => setNewMessage(e.target.value)}
                                         value={newMessage}
                                     ></textarea>
                                     <button className="chatSubmitButton" onClick={handleSubmit}>
-                                        Send
+                                        Envoyer
                                     </button>
                                 </div>
                             </>

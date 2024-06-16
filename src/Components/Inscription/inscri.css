@@ -49,8 +49,8 @@
 
 .inscription .overlap-group {
     background-color: #f7f7f7;
-    height: 670px;
-    position: relative; /* Changement de position à relative */
+    height: 816px;
+    position: relative;
     width: 585px;
 }
 
@@ -107,12 +107,14 @@
     height: 30px;
     object-fit: cover;
     position: absolute;
-    top: 69%;
+    top: 74%;
     left: 75%;
     transform: translate(-50%, -50%); /* Centrer l'image */
     cursor: pointer; /* Ajouter un curseur pointer pour indiquer que l'image est cliquable */
 }
-
+.inscription .overlap-8,
+.inscription .overlap-7,
+.inscription .overlap-6,
 .inscription .overlap-2,
 .inscription .overlap-3,
 .inscription .overlap-4 {
@@ -138,7 +140,16 @@
     left: 50%; /* Ajuster la position horizontale */
     transform: translateX(-50%); /* Déplacer de moitié de la largeur de l'élément vers la gauche */
 }
+.inscription .overlap-7
+{
+    top: 520px;
 
+}
+.inscription .overlap-8
+{
+    top: 600px;
+
+}
 .inscription .overlap-3 {
     top: 365px;
 }
@@ -150,7 +161,9 @@
 .inscription .overlap- {
     top: 439px;
 }
-
+.inscription .overlap-6 {
+    top: 439px;
+}
 .inscription .overlap-5 {
     background-color: #00abd5;
     border:solid #00abd5;
@@ -158,7 +171,7 @@
     height: 45px;
     position: absolute;
     width: 353px;
-    top: 584px;
+    top: 690px;
     transform: translateX(-50%); /* Déplacer de moitié de la largeur de l'élément vers la gauche */
     font-family:"Karla",Helvetica;
     font-size:20px;

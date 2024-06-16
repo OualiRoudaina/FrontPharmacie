@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import './ResetPassword.css';
+import './ChangePasswordByEmail.css';
 import verification from '../Assets/verification.png';
 import verification1 from '../Assets/verification2.png';
 import axios from 'axios';
@@ -8,8 +8,8 @@ import Lottie from 'react-lottie';
 import animationData from "../Assets/Animation - 1713053106244.json";
 import fleche from '../Assets/fleche.png';
 
-function ResetPassword() {
-  const [userId, setUserId] = useState('');
+function Password() {
+  const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [confirmPassword, setConfirmPassword] = useState('');
   const [errorMessage, setErrorMessage] = useState('');
@@ -18,9 +18,9 @@ function ResetPassword() {
   useEffect(() => {
     const userData = JSON.parse(localStorage.getItem('user'));
     if (userData) {
-      setUserId(userData._id);
+        setEmail(userData.email);
     }
-  }, []);
+}, []);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -36,7 +36,7 @@ function ResetPassword() {
     }
 
     try {
-      const response = await axios.put(`http://localhost:3007/api/v1/pharmacies/${userId}`, { password });
+      const response = await axios.put(`http://localhost:3007/api/v1/users/change/${email}`, { password });
       console.log(response.data);
       navigate('/');
     } catch (error) {
@@ -50,12 +50,7 @@ function ResetPassword() {
 
   return (
     <div className="reset-password">
-      <img
-        src={fleche} // Source de l'image
-        alt="Go to Dashboard" // Texte alternatif pour l'image
-        className="arrow-icon" // Classe pour le style du bouton. 
-        onClick={handleNavigate} // Attachez l'événement de clic pour la navigation
-      />
+      
       <form onSubmit={handleSubmit} className="login-form">
         <h1 className="login-title">Réinitialiser le mot de passe</h1>
         
@@ -93,4 +88,4 @@ function ResetPassword() {
   );
 }
 
-export default ResetPassword;
+export default Password;

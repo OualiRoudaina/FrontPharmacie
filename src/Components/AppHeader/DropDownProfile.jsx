@@ -53,14 +53,14 @@ const DropDownProfile = () => {
       <ul className='profileMenu'>
         {/* Lorsque le lien Profile est cliqué, appelez la fonction goToUpdateProfile */}
         <li className='menuItem' onClick={goToUpdateProfile}>
-          <FontAwesomeIcon icon={faUser} className='icon' /> Profile
+          <FontAwesomeIcon icon={faUser} className='icon' /> Profil
         </li>
         <li className='menuItem' onClick={goToResetPassword}>
-          <FontAwesomeIcon icon={faCog} className='icon' /> Settings
+          <FontAwesomeIcon icon={faCog} className='icon' /> Paramètre
         </li>
         {/* Lorsque le lien Logout est cliqué, appelez la fonction handleLogout */}
         <li className='menuItem' onClick={handleLogout}>
-          <FontAwesomeIcon icon={faSignOutAlt} className='icon' /> Logout
+          <FontAwesomeIcon icon={faSignOutAlt} className='icon' /> Se déconnecter
         </li>
       </ul>
     </div>

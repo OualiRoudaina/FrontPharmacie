@@ -28,24 +28,10 @@ function AppHeader() {
         width={100}
         src={logo}
       ></Image>
-      <Typography.Title>Dashboard</Typography.Title>
+      <Typography.Title>Tableau de bord</Typography.Title>
       <Space>
-        <Badge count={comments.length} dot>
-          <MailOutlined
-            style={{ fontSize: 24 }}
-            onClick={() => {
-              setCommentsOpen(true);
-            }}
-          />
-        </Badge>
-        <Badge count={orders.length}>
-          <BellFilled
-            style={{ fontSize: 24 }}
-            onClick={() => {
-              setNotificationsOpen(true);
-            }}
-          />
-        </Badge>
+       
+       
         {/* Ajout de l'icône de profil */}
         <UserOutlined
           style={{ fontSize: 24 }}

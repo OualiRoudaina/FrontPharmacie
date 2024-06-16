@@ -29,7 +29,7 @@ function SendEmail() {
 
             // Si le code correspond, rediriger vers la page de réinitialisation du mot de passe
             if (response.data.status === 200) {
-                navigate('/resetPassword');
+                navigate('/Password');
             } else {
                 setErrorMessage('Code incorrect. Veuillez réessayer.');
             }
